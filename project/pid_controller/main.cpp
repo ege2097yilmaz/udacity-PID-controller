@@ -19,7 +19,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <string>
-#include <thread> 
+#include <thread>
 #include <tuple>
 #include <vector>
 #include <iostream>
@@ -268,16 +268,16 @@ int main ()
   PID pid_throttle = PID();
 
   // Initialize the PID controllers with chosen parameters
-  double steer_Kp = 0.15;  
-  double steer_Ki = 0.0;
-  double steer_Kd = 0.0;
+  double steer_Kp = 0.78;  
+  double steer_Ki = 0.0087;
+  double steer_Kd = 0.0001;
   double steer_output_max = 1.0;  
   double steer_output_min = -1.0;
 
   pid_steer.Init(steer_Kp, steer_Ki, steer_Kd, steer_output_max, steer_output_min);
 
   double throttle_Kp = 0.125; 
-  double throttle_Ki = 0.001;
+  double throttle_Ki = 0.0019;
   double throttle_Kd = 0.00001;
   double throttle_output_max = 1.0;  // Throttle typically ranges from 0 to 1
   double throttle_output_min = 0.0;
