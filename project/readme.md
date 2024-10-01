@@ -1,8 +1,14 @@
 # Answers
 This project implements a PID (Proportional, Integral, Derivative) controller, which is widely used for real-time autonomous systems. Below is a detailed explanation of how PID works, its effects, tuning strategies, and possible improvements.
 
-# Plots
+# Plots and screenshots
 Two attempt of the PID outputs are seen below. First are optimized outputs and seconds are non-optimized but refined with hand.
+
+The demo gif and picture are;
+
+![Demo picture](screenshots/demo.png)
+
+![Demo Animation](screenshots/demo.gif)
 
 OPtimized Outputs !!!
 
